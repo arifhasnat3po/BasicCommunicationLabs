@@ -1,0 +1,15 @@
+clc;
+clear all;
+close all;
+t=-10:1:10;
+x=(t==0);
+subplot(2,1,1);
+plot(t,x,'g');
+xlabel('time');
+ylabel('amplitude');
+title('unit impulse function');
+subplot(2,1,2);
+stem(t,x,'r');
+xlabel('time');
+ylabel('amplitude');
+title('unit impulse discrete function');

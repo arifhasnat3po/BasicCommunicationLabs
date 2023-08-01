@@ -1,0 +1,15 @@
+clc;
+clear all;
+close all;
+t=linspace(-5,5);
+x=sinc(t);
+subplot(2,1,1);
+plot(t,x,'g');
+xlabel('time');
+ylabel('amplitude');
+title('sinc signal');
+subplot(2,1,2);
+stem(t,x,'r');
+xlabel('time');
+ylabel('amplitude');
+title('sinc sequence');
